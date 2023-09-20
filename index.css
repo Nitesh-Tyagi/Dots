@@ -1,0 +1,100 @@
+:root {
+    --sz: 45px;
+    --sz2: 41px;
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#container {
+    height: 80vh;
+    width: 80vw;
+    margin: 10vh 10vw;
+    position: relative;
+    /* background-color: red; */
+    align-content: center;
+    
+}
+
+#cells {
+    margin: auto auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cellRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellCol {
+    height: var(--sz);
+    width: var(--sz);
+
+    /* background-color: ; */
+    opacity: 40%;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+#grid {
+    /* margin: calc(10vh - 2px) calc(10vw - 2px); */
+    /* position: fixed; */
+    margin: auto auto;
+    position: absolute;
+    left: calc(50% + 20px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lineRow {
+    display: flex;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: rgb(139, 89, 89);
+    box-shadow: 0px 0px 0px 2px rgb(62, 62, 62);
+ 
+    border-radius: 2px;
+    z-index: 5;
+}
+
+.lineVCol {
+    height: var(--sz2);
+    width: 4px;
+
+    margin: 0px var(--sz2) 0px 0px;
+    border-radius: 2px;
+
+    /* background-color: rgb(181, 230, 253); */
+}
+
+.lineHCol {
+    height: 4px;
+    width: var(--sz2);
+
+    margin: 0px 0px;
+    border-radius: 2px;
+
+    /* background-color:  pink; */
+}
+
+.lineVCol:hover {
+    background-color: rgb(180, 251, 155);
+}
+
+.lineHCol:hover {
+    background-color: rgb(180, 251, 155);
+}
+

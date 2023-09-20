@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Jolly Lodger;
+    src: url(JollyLodger-Regular.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to bottom, rgb(252, 238, 240), rgb(232, 246, 254)); */
+    height: 100vh;
+    overflow: hidden; /* Prevents scrollbars */
+    background-color: (181, 230, 253);
+}
+
+#pinkScore {
+    height: 5vh;
+    width: 50vw;
+
+    position: fixed;
+    left: 25vw;
+    top: 0px;
+    background-color: white;
+    border-radius: 0 0 2vw 2vw;
+    border-color: pink;
+    border-width: 0 4px 4px 4px;
+    border-style: solid;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /* opacity: %; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: pink;
+    text-shadow: 0 0 0.25px;
+
+    font-family: Jolly Lodger;
+    font-size: 30px; 
+}
+
+#blueScore {
+    height: 5vh;
+    width: 50vw;
+
+    position:fixed;
+    left: 25vw;
+    bottom: 0px;
+    background-color: white;
+    border-radius: 2vw 2vw 0 0;
+    border-color: rgb(181, 230, 253);
+    border-width: 4px 4px 0 4px;
+    border-style: solid;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(181, 230, 253);
+    text-shadow: 0 0 0.25px;
+
+    font-family: Jolly Lodger;
+    font-size: 30px;
+}
+
+.pink {
+    background-color: pink;
+}
+.blue {
+    background-color: rgb(181, 230, 253);
+}
+
+
+@media (max-height: 50vw) {
+    #pinkScore {
+        height: 50vh;
+        width: 5vw;
+        left: 0px;
+        top: 25vh;
+        border-radius: 0 2vw 2vw 0;
+        border-width: 4px 4px 4px 0;
+    }
+
+    #blueScore {
+        height: 50vh;
+        width: 5vw;
+        left: 95vw;
+        top: 25vh;
+        border-radius: 2vw 0 0 2vw;
+        border-width: 4px 0 4px 4px;
+    }
+}
+
+#winnerCard {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: -10;
+    opacity: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 0 0 0.25px;
+    font-family: Jolly Lodger;
+    font-size: 80px;
+}
